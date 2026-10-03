@@ -1,0 +1,266 @@
+.contact-hero {
+  position: relative;
+  display: grid;
+  min-height: min(780px, 100svh);
+  align-items: center;
+  overflow: hidden;
+  padding: 9rem max(6vw, 24px) 4rem;
+  color: #173d3a;
+  background:
+    radial-gradient(ellipse at 20% 15%, rgb(96 186 177 / 17%), transparent 42%),
+    #f7f4ec;
+}
+
+.contact-hero-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.85fr);
+  align-items: center;
+  gap: clamp(3rem, 8vw, 8rem);
+  width: min(1120px, 100%);
+  margin: 0 auto;
+}
+
+.contact-intro {
+  max-width: 540px;
+}
+
+.contact-eyebrow {
+  margin-bottom: 1.2rem;
+  color: #287c70;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.contact-intro h1 {
+  margin: 0;
+  color: #173d3a;
+  font-size: clamp(4rem, 8vw, 7.5rem);
+  font-weight: 700;
+  letter-spacing: -0.055em;
+  line-height: 0.94;
+}
+
+.contact-lead {
+  max-width: 430px;
+  margin: 1.7rem 0 2rem;
+  color: #596b65;
+  font-size: clamp(1.05rem, 1.7vw, 1.25rem);
+  line-height: 1.6;
+}
+
+.contact-enquire-button {
+  display: inline-flex;
+  min-height: 3.5rem;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.9rem 1.3rem;
+  border: 0;
+  border-radius: 999px;
+  color: #fff;
+  background: #17645d;
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.contact-enquire-button span {
+  font-size: 1.2rem;
+}
+
+.contact-enquire-button:hover {
+  background: #104c47;
+  transform: translateY(-2px);
+}
+
+.contact-enquire-button:focus-visible,
+.contact-detail a:focus-visible {
+  outline: 3px solid #17645d;
+  outline-offset: 4px;
+}
+
+.contact-availability {
+  margin-top: 1rem;
+  color: #687976;
+  font-size: 0.85rem;
+}
+
+.contact-card {
+  padding: clamp(1.6rem, 3vw, 2.5rem);
+  border: 1px solid #e5e0d5;
+  border-radius: 1.15rem;
+  background: #fff;
+  box-shadow: 0 24px 70px rgb(23 61 58 / 10%);
+}
+
+.contact-card-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e9e7df;
+}
+
+.contact-card-mark {
+  display: grid;
+  width: 3.4rem;
+  height: 3.4rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #17645d;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.contact-card-label,
+.contact-detail-label {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: #687976;
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.contact-card-heading h2 {
+  margin: 0;
+  color: #173d3a;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  font-weight: 700;
+}
+
+.contact-details {
+  display: grid;
+  gap: 1.4rem;
+  padding: 1.6rem 0;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  color: #324b45;
+  font-size: 0.94rem;
+  line-height: 1.55;
+  text-decoration: none;
+}
+
+.contact-detail-icon {
+  display: grid;
+  width: 2.1rem;
+  height: 2.1rem;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid #c9dfd9;
+  border-radius: 50%;
+  color: #17645d;
+  font-size: 0.95rem;
+}
+
+.contact-detail-label {
+  margin: 0 0 0.2rem;
+  font-size: 0.68rem;
+}
+
+.contact-address,
+.contact-phone {
+  color: #17645d;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.contact-address:hover,
+.contact-phone:hover {
+  color: #104c47;
+}
+
+.contact-phone-separator {
+  color: #687976;
+}
+
+.contact-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  border-top: 1px solid #e9e7df;
+  color: #687976;
+  font-size: 0.82rem;
+}
+
+.contact-card-footer span:last-child {
+  color: #17645d;
+  font-size: 1.3rem;
+}
+
+.contact-decoration {
+  position: absolute;
+  width: 22rem;
+  height: 22rem;
+  border: 1px solid rgb(23 100 93 / 10%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.contact-decoration-one {
+  top: -12rem;
+  right: -9rem;
+}
+
+.contact-decoration-two {
+  bottom: -18rem;
+  left: 27%;
+  width: 34rem;
+  height: 34rem;
+}
+
+@media (max-width: 800px) {
+  .contact-hero {
+    min-height: auto;
+    padding-top: 9rem;
+    padding-bottom: 4rem;
+  }
+
+  .contact-hero-inner {
+    max-width: 600px;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact-intro h1 {
+    font-size: clamp(4rem, 16vw, 6rem);
+  }
+}
+
+@media (max-width: 520px) {
+  .contact-hero {
+    padding: 8rem 1.25rem 3rem;
+  }
+
+  .contact-hero-inner {
+    gap: 2rem;
+  }
+
+  .contact-card {
+    padding: 1.35rem;
+  }
+
+  .contact-detail {
+    font-size: 0.88rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-enquire-button,
+  .contact-address,
+  .contact-phone {
+    transition: none;
+  }
+}

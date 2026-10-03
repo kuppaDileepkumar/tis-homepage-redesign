@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=TT+Chocolates&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TT Chocolates', sans-serif;
+}
+
+.app-shell {
+    min-height: 100vh;
+    background: #f7f4ec;
+    transition: background-color 180ms ease, color 180ms ease;
+}
+
+.app-shell[data-theme='dark'] {
+    color-scheme: dark;
+    background: #102c29;
+}
+
+.app-shell[data-theme='dark'] .top-bar {
+    background-color: #173d3a;
+}
+
+.app-shell[data-theme='dark'] .phone-number {
+    color: #f7f8f1;
+}
+
+.app-shell[data-theme='dark'] .enquire {
+    color: #102c29;
+    background: #d6e86a;
+}
+
+.app-shell[data-theme='dark'] .contact-hero {
+    color: #f7f8f1;
+    background:
+        radial-gradient(ellipse at 20% 15%, rgb(96 186 177 / 16%), transparent 42%),
+        #102c29;
+}
+
+.app-shell[data-theme='dark'] .contact-eyebrow,
+.app-shell[data-theme='dark'] .contact-detail-icon,
+.app-shell[data-theme='dark'] .contact-card-footer span:last-child {
+    color: #d6e86a;
+}
+
+.app-shell[data-theme='dark'] .contact-intro h1,
+.app-shell[data-theme='dark'] .contact-card-heading h2,
+.app-shell[data-theme='dark'] .contact-detail,
+.app-shell[data-theme='dark'] .contact-address,
+.app-shell[data-theme='dark'] .contact-phone {
+    color: #f7f8f1;
+}
+
+.app-shell[data-theme='dark'] .contact-lead,
+.app-shell[data-theme='dark'] .contact-availability,
+.app-shell[data-theme='dark'] .contact-card-label,
+.app-shell[data-theme='dark'] .contact-detail-label,
+.app-shell[data-theme='dark'] .contact-phone-separator,
+.app-shell[data-theme='dark'] .contact-card-footer {
+    color: #b9c6be;
+}
+
+.app-shell[data-theme='dark'] .contact-enquire-button {
+    color: #102c29;
+    background: #d6e86a;
+}
+
+.app-shell[data-theme='dark'] .contact-enquire-button:hover {
+    background: #e4f28c;
+}
+
+.app-shell[data-theme='dark'] .contact-enquire-button:focus-visible,
+.app-shell[data-theme='dark'] .contact-detail a:focus-visible {
+    outline-color: #d6e86a;
+}
+
+.app-shell[data-theme='dark'] .contact-card {
+    border-color: rgb(247 248 241 / 14%);
+    background: #173d3a;
+    box-shadow: 0 24px 70px rgb(0 0 0 / 20%);
+}
+
+.app-shell[data-theme='dark'] .contact-card-heading,
+.app-shell[data-theme='dark'] .contact-card-footer {
+    border-color: rgb(247 248 241 / 15%);
+}
+
+.app-shell[data-theme='dark'] .contact-card-mark {
+    color: #102c29;
+    background: #d6e86a;
+}
+
+.app-shell[data-theme='dark'] .contact-detail-icon {
+    border-color: rgb(214 232 106 / 38%);
+}
+
+.app-shell[data-theme='dark'] .contact-address:hover,
+.app-shell[data-theme='dark'] .contact-phone:hover {
+    color: #d6e86a;
+}
+
+.app-shell[data-theme='dark'] .contact-decoration {
+    border-color: rgb(214 232 106 / 9%);
+}
+
+.app-shell[data-theme='dark'] .admissions-page {
+    color: #e7f0eb;
+    background:
+        linear-gradient(115deg, rgb(96 186 177 / 12%), transparent 48%),
+        #102c29;
+}
+
+.app-shell[data-theme='dark'] .admissions-intro h1,
+.app-shell[data-theme='dark'] .form-heading h2 {
+    color: #f7f8f1;
+}
+
+.app-shell[data-theme='dark'] .admissions-kicker,
+.app-shell[data-theme='dark'] .form-eyebrow {
+    color: #74c8bb;
+}
+
+.app-shell[data-theme='dark'] .admissions-intro-copy,
+.app-shell[data-theme='dark'] .required-note,
+.app-shell[data-theme='dark'] .form-hint,
+.app-shell[data-theme='dark'] .form-footnote {
+    color: #b9c6be;
+}
+
+.app-shell[data-theme='dark'] .admissions-year {
+    color: rgb(116 200 187 / 9%);
+}
+
+.app-shell[data-theme='dark'] .admissions-form {
+    border-color: #365953;
+    background: #173d3a;
+    box-shadow: 0 18px 50px rgb(0 0 0 / 18%);
+}
+
+.app-shell[data-theme='dark'] .form-field > label,
+.app-shell[data-theme='dark'] .consent-row {
+    color: #e7f0eb;
+}
+
+.app-shell[data-theme='dark'] .form-field input,
+.app-shell[data-theme='dark'] .form-field select {
+    border-color: #54756c;
+    color: #f7f8f1;
+    background: #102c29;
+}
+
+.app-shell[data-theme='dark'] .form-field input:disabled {
+    color: #b9c6be;
+    background: #23443d;
+}
+
+.app-shell[data-theme='dark'] .form-button-secondary {
+    color: #a8ded5;
+    border-color: #54756c;
+    background: #23443d;
+}
+
+.app-shell[data-theme='dark'] .form-button-secondary:not(:disabled):hover {
+    background: #31564e;
+}
+
+.app-shell[data-theme='dark'] .form-status {
+    color: #a8ded5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .app-shell {
+        transition: none;
+    }
+}
